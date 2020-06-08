@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <input type="text" #listInput name="listInput" />
+  <button (click)="onClear(listInput.value)">Add n clear</button>
+  <ul *ngFor="let ar of arr">
+    <li>{{ar}}</li>
+  </ul>
+</div>
